@@ -16,7 +16,8 @@ public class Main {
         Controller controller = new Controller();
 
         StudyGroup studyGroup = controller.createStudyGroupWithTeacherAndStudents(teacher, students);
-
+        
+// Вывод информации о созданной учебной группе
         System.out.println("Teacher id: " + studyGroup.getTeacher().getId());
         for (Student student : studyGroup.getStudents()){
             System.out.println("Student id: " + student.getId());
