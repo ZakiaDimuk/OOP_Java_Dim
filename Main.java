@@ -1,0 +1,25 @@
+package OOP_Sem5;
+
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args){
+        Teacher teacher = new Teacher();
+        teacher.setId(1);
+
+        List<Student> students = List.of(
+            new Student(1),
+            new Student(2),
+            new Student(3)
+        );
+
+        Controller controller = new Controller();
+
+        StudyGroup studyGroup = controller.createStudyGroupWithTeacherAndStudents(teacher, students);
+
+        System.out.println("Teacher id: " + studyGroup.getTeacher().getId());
+        for (Student student : studyGroup.getStudents()){
+            System.out.println("Student id: " + student.getId());
+        }
+    }
+}
