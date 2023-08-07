@@ -2,7 +2,7 @@ package OOP_Sem5_1;
 
 import java.util.List;
 
-public class Main {
+public class Glavnyi {
     public static void main(String[] args){
         Teacher teacher = new Teacher();
         teacher.setId(1);
